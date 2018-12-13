@@ -1,39 +1,9 @@
 class Dog
-  def name=(name)
-    @name = name
-  end
+  attr_writer :name
 
-  def name
-    @name
-  end
+  attr_reader :name
 
-  def breed=(breed)
-    @breed = breed
-  end
+  attr_writer :breed
 
-  def breed
-    @breed
-  end
+  attr_reader :breed
 end
-
-# fido = Dog.new
-# fido.name = "Fido"
-
-#   class Person
-#
-#   def initialize(first_name, last_name)
-#     @first_name = first_name
-#     @last_name = last_name
-#   end
-#
-#   def name=(full_name)
-#     first_name, last_name = full_name.split
-#     @first_name = first_name
-#     @last_name = last_name
-#   end
-#
-#   def name
-#     "#{@first_name} #{@last_name}".strip
-#   end
-#
-# end

@@ -1,17 +1,9 @@
 class Person
-  def name=(name) ##
-    @name = name
-  end
+  attr_writer :name
 
-  def name
-    @name
-  end
+  attr_reader :name
 
-  def job=(job) ##
-    @job = job
-  end
+  attr_writer :job
 
-  def job
-    @job
-  end
+  attr_reader :job
 end
